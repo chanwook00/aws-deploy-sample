@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: local
+  output:
+    ansi:
+      enabled: detect
+
+logging:
+  level:
+    sample: info
+
+---
+spring:
+  profiles: local
+server:
+  port: 8000
+
+---
+spring:
+  profiles: dev
